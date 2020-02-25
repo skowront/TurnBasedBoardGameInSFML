@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AppStateInfo">
+    <Position X="17.25" Y="5.75" Width="3.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Typedef Name="AppStateInfo::ASIFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ASI.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <AssociationLine Name="obj" Type="clickableObject" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.25" Y="6.102" />
+        <Point X="6.812" Y="6.102" />
+        <Point X="6.812" Y="6.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.505" Y="0.091" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="resultBtn" Type="container" FixedToPoint="true">
+      <Path>
+        <Point X="17.25" Y="7.938" />
+        <Point X="15.25" Y="7.938" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="world_root" Type="container" FixedToPoint="true">
+      <Path>
+        <Point X="17.25" Y="7.438" />
+        <Point X="15.25" Y="7.438" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.117" Y="0.12" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAAAIABAggAAYAIgAgICAAAAAAQQAAAFAQAgADQAKAE=</HashCode>
+      <FileName>ASI.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ini" />
+      <Field Name="obj" />
+      <Field Name="resultBtn" />
+      <Field Name="turnbtn_container_ptr" />
+      <Field Name="world_root" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="clickable">
+    <Position X="0.5" Y="6.5" Width="3.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Typedef Name="clickable::ClickedFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Clickable.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAQCEAAAAgIhAAAgAIBACAAEiAAAAAAIAlBAAAAAI=</HashCode>
+      <FileName>Clickable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clickableObject">
+    <Position X="5.5" Y="6.5" Width="1.5" />
+    <InheritanceLine Type="object" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="7.298" />
+        <Point X="7" Y="7.298" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAA=</HashCode>
+      <FileName>ClickableObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="initialize">
+    <Position X="23.25" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAwABCBACBAgEAAAAAAgAAAAGAIQACABIBAIUA=</HashCode>
+      <FileName>Initialize.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="object">
+    <Position X="10.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAMEACAIgAgAgAAAIAAACCgAAEAgAAQACEgAAIBAA=</HashCode>
+      <FileName>Object.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="world" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="unit">
+    <Position X="4.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAGAAAggAAAAAIAACACAAEEAADAAAAAEAQMBAQ=</HashCode>
+      <FileName>unit.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="field">
+    <Position X="7.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAACAAAAAAAAAAIAAAACAAAQAAAAQAAEAAAEAAA=</HashCode>
+      <FileName>Field.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="units" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="button">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <InheritanceLine Type="clickableObject" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="5.938" Y="6.5" />
+        <Point X="5.938" Y="5.606" />
+        <Point X="3.5" Y="5.606" />
+        <Point X="3.5" Y="4.454" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAGAAAAEAAAAQAAEAAAAAAA=</HashCode>
+      <FileName>Button.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="board">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <AssociationLine Name="player1btns" Type="button" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="3.775" />
+        <Point X="4.25" Y="3.775" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAUCACAIAAAADBCAIAAAACAAAEAAAQYAAEEAAAAAA=</HashCode>
+      <FileName>board.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="player1btns" />
+      <Field Name="player2btns" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="background">
+    <Position X="8" Y="2.25" Width="1.5" />
+    <InheritanceLine Type="clickableObject" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="6.562" Y="6.5" />
+        <Point X="6.562" Y="5.585" />
+        <Point X="8.75" Y="5.585" />
+        <Point X="8.75" Y="4.637" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAACCAAAAAAAAAAIAAAAAAAAAAAAAQAAEAgAAIAA=</HashCode>
+      <FileName>background.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="container">
+    <Position X="13.75" Y="6.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BAIAEAAEAABAIAAAAAAAIAABAABAQAAAAAAAAAAABAA=</HashCode>
+      <FileName>Container.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="texture_data">
+    <Position X="26.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgACAAAABAABAAAAAAAA=</HashCode>
+      <FileName>Initialize.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="font_data">
+    <Position X="21.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAIAAAAAAAAAAABAIAAAAAAAAAA=</HashCode>
+      <FileName>Initialize.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

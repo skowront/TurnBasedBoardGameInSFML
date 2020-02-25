@@ -1,0 +1,33 @@
+Application Manual
+
+Application does not take any parameters.
+
+As interface is clear enough it's function's descriptions will be skipped.
+
+Game rules.
+0.Blue==player1 on the left.
+0.Red==player2 on the right.
+1.The goal is to reach and cross last row of opponent's side.
+2.Spawn button ! spawns 1 unit on the last row for each click.
+3.Push button -> pushes all allied units in row if possible.
+4.Merge button ->| merges first possible to merge unit in a row 
+and pushes others if possible
+5.Split up button ~V if possible splits units in 1/n ratio where 
+n>1 and is amount of units in clicked row.
+6.Split down button V if possible splits units in 1/n ratio where 
+n>1 and is amount of units in clicked row.
+7.Battle button X resolves battle by simple force calculation
+of a row += +-1 and columns:attacker, defender, defenders back.
+Only attacking and defending units in chosen row are affected by death.
+8.A unit may be killed in a battle if it's power will be 1 or less.
+
+There are no clear hints or ideas how to win the game facing any opponent.
+The game is supposed to be long and take more than 100 turns.
+
+There is config file that must contain all the lines but values may differ,
+and may be changed by the user to adjust the images and make some changes in gameplay.
+Values are not checked before loading so any irrational input (more than int) 
+may cause unstable execution of application. It is possible then to force the 
+application to break.
+
+Author:Tomasz Skowron
